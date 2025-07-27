@@ -1,0 +1,26 @@
+{
+  "name": "category-shop-backend",
+  "version": "1.0.0",
+  "description": "Backend for Category Shop application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "cleanup": "node cleanup_missing_images.js",
+    "migrate": "node migrate_to_base64.js",
+    "migrate:admin": "node migrate_admin_profile.js",
+    "migrate:banner": "node migrate_banner.js"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cropperjs": "^1.5.13",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.16.5",
+    "multer": "^2.0.1",
+    "vue-router": "^4.5.1"
+  }
+}
